@@ -38,3 +38,24 @@ const App = () => {
   )
 }
 export default App;
+
+import React, { useEffect, useState } from 'react';
+// import './App.css';
+
+const App = () => {
+  const [state, setState] = useState({count: 0, number: 0})
+
+  
+
+  return(
+    <div>
+      <p>u clicked {state.count} times </p>
+      {/* <p>u won {number} times </p> */}
+      <button onClick={() => setState({...state, count: state.count +1})}>Click me</button>
+      {/* <button onClick={() => setNumber(number + 1)}>winnning streak!!</button> */}
+    </div>
+  )
+}
+
+
+export default App;
