@@ -59,3 +59,16 @@ const App = () => {
 
 
 export default App;
+// const [count, setCount] = useState(0);
+    // const [number, setNumber] = useState(0);
+  
+
+return(
+    <div>
+      <p>u clicked {count} times </p>
+      <p>u won {number} times </p>
+      <button onClick={() => setState({count +1})}>Click me</button>
+      <button onClick={() => setNumber(number + 1)}>winnning streak!!</button>
+    </div>
+  )
+}
